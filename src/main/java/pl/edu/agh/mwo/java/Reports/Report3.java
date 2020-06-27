@@ -16,7 +16,7 @@ public class Report3 {
 	private ArrayList<RecordEntry> recordEntries;
 	private String headerCol1 = "Miesiąc";
 	private String headerCol2 = "Projekt";
-	private String headerCol3 = "Ilość godzin";
+	private String headerCol3 = "Ilość godzin [h]";
 	private String reportName = "Raport3";
 	
 	

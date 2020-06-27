@@ -227,6 +227,7 @@ public class Menu {
 			System.out.println(ANSI_RED+"Podczas wczytywania danych wystąpiły następujące problemy:"+ANSI_RESET);
 			ReadData.printErrorLog();
 		}
+
 		if (re.size() > 0) {
 
 			printMenu();

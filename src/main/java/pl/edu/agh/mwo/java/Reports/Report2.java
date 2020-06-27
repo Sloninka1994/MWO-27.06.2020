@@ -19,7 +19,7 @@ public class Report2 extends ReportSimple {
         RecordFilter recordFilter = new RecordFilter(recordEntries);
         this.recordEntries =  recordFilter.byYear(Year);
         this.headerCol1 = "Projekt";
-        this.headerCol2 = "Ilość godzin";
+        this.headerCol2 = "Ilość godzin [h]";
         this.reportName = "Raport2";
     }
     @Override

@@ -13,7 +13,7 @@ public class Report5 extends ReportSimple {
         RecordFilter recordFilter = new RecordFilter(recordEntries);
         this.recordEntries =  recordFilter.byProject(projectName);
         this.headerCol1 = "Projekt";
-        this.headerCol2 = "Ilość godzin";
+        this.headerCol2 = "Ilość godzin [h]";
         this.reportName = "Raport5";
     }
 

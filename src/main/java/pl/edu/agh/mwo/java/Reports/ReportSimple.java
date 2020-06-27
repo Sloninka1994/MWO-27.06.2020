@@ -48,7 +48,7 @@ public class ReportSimple {
             for (Map.Entry<String, Double> entry : a.entrySet()) {
                 String key = entry.getKey();
                 String value = entry.getValue().toString();
-                System.out.println(ReportFunctions.adjustTextToLength(key, maxLenKey)  + " => " + ReportFunctions.adjustTextToLength(value, maxLenVal) + " h");
+                System.out.println(ReportFunctions.adjustTextToLength(key, maxLenKey)  + " => " + ReportFunctions.adjustTextToLength(value, maxLenVal) );
             }
             return true;
         }else{

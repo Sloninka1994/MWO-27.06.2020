@@ -21,7 +21,7 @@ public class Report1 extends ReportSimple {
         RecordFilter recordFilter = new RecordFilter(recordEntries);
         this.recordEntries =  recordFilter.byYear(Year);
         this.headerCol1 = "Pracownik";
-        this.headerCol2 = "Ilość godzin";
+        this.headerCol2 = "Ilość godzin [h]";
         this.reportName = "Raport1";
     }
 
