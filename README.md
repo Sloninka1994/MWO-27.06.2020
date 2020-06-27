@@ -73,6 +73,13 @@ System umożliwia wybór konkretnego pracownika poprzez wybranie jego imienia i 
 rok XXXX, Imie i nazwisko
 Lp/Miesiac/Projekt/Liczba godzin 
 
+* RAPORT 4
+Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego projektu.
+
+Lp/Imie i nazwisko/ Liczba godzin 
+Lp/Imie i nazwisko/ Liczba godzin 
+Lp/Imie i nazwisko/ Liczba godzin 
+Suma: XXX [h]
 
 
 ## Ograniczenia / known issues
