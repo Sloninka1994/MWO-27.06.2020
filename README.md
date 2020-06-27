@@ -50,7 +50,7 @@ Po wczytaniu danych program wyświetla menu pozwalające na generowanie wybraneg
 		4: Procentowe zaangazowanie danego pracownika w projektach w danym roku
 		5: Szczegółowy wykaz pracy w danym projekcie
 		6: Pokaż wszystkie zaimportowane dane
-		7: Exit
+		7: Tworzenie wykresu kołowego
 
 Przykład: Po naciśnięciu [1] i [Enter] zostanie wygenerowany raport pierwszy.
 
@@ -98,6 +98,12 @@ Lp/Imie i nazwisko/ Liczba godzin
 Lp/Imie i nazwisko/ Liczba godzin 
 
 Suma: XXX [h]
+
+
+
+Program umożliwia także zestawienie wyników procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
+Po naciśnięciu [1\7] i [Enter] zostanie wygenerowany wykres. 
+
 
 ## Ograniczenia / known issues
 Brak danych
