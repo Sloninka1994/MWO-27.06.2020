@@ -77,8 +77,11 @@ Lp/Miesiac/Projekt/Liczba godzin
 Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego projektu.
 
 Lp/Imie i nazwisko/ Liczba godzin
+
 Lp/Imie i nazwisko/ Liczba godzin 
+
 Lp/Imie i nazwisko/ Liczba godzin 
+
 Suma: XXX [h]
 
 
