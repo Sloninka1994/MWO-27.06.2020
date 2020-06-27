@@ -89,3 +89,4 @@ Suma: XXX [h]
 
 
 ## Ograniczenia / known issues
+Brak danych
