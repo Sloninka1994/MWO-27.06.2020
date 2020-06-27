@@ -101,6 +101,7 @@ Lp/Imie i nazwisko/ Liczba godzin
 
 Suma: XXX [h]
 
+
 * RAPORT 6 
 
 Program rysuje wykres słupkowy do RAPORTU 2. 
@@ -111,7 +112,9 @@ x -> projekty
 
 y -> liczba godzin, która wypracowana w danym projekcie
 
+
 * RAPORT 7
+
 Program zestawia wyniki procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
 
 Po naciśnięciu [7] i [Enter] zostanie wygenerowany wykres kołowy.
