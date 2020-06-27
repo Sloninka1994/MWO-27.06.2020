@@ -243,14 +243,17 @@ public class Report4 extends ReportSimple{
 		out = getReport4();
 		for (Entry<String, ArrayList<String>>entry : out.entrySet()) {
 			for(String d: entry.getValue()) {
-				Double d1 = Double.parseDouble(d);
+				Double d1 = Double.parseDouble(d.replace("%",""));
 				vlist.add(d1);
+
+			}
+			for (int i = 0; i < vlist.size(); i++){
+				pieChart.addSeries(headerList.get(i), vlist.get(i) );
 			}
 
-
-			for(String str:headerList) {
-				pieChart.addSeries(str, d1);
-			};
+//			for(String str:headerList) {
+//				pieChart.addSeries(str, d1);
+//			};
 			{
 				try{
 					BitmapEncoder.saveBitmap(pieChart, folderPath + "\\Report7 - PieChart", BitmapEncoder.BitmapFormat.PNG );

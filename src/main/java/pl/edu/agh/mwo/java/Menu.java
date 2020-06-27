@@ -52,7 +52,7 @@ public class Menu {
 			System.out.println(ANSI_BLUE + "4:"+ ANSI_RESET +" Procentowe zaangazowanie danego pracownika w projektach w danym roku");
 			System.out.println(ANSI_BLUE + "5:"+ ANSI_RESET +" Szczegółowy wykaz pracy w danym projekcie");
 			System.out.println(ANSI_BLUE + "6:"+ ANSI_RESET +" Wygeneruj wykres słupkowy dla raportu 2");
-			System.out.println(ANSI_BLUE + "7:"+ ANSI_RESET +" Pokaż wszystkie zaimportowane dane");
+			System.out.println(ANSI_BLUE + "7:"+ ANSI_RESET +" Wygeneruj wykres kołowy dla raportu 4");
 			System.out.println(ANSI_BLUE + "8:"+ ANSI_RESET + ANSI_RED +" Exit"+ ANSI_RESET);
 
 			String option = scan.nextLine();
@@ -191,7 +191,7 @@ public class Menu {
 					}
 					Report4 r7 = new Report4(re, workerName);
 					r7.generatePieChart();
-
+					break;
 				case "8":
 					System.out.println(ANSI_GREEN + "Zapraszamy ponownie! " + ANSI_RESET);
 					return;
