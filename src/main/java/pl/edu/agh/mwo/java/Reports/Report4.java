@@ -193,29 +193,34 @@ public class Report4 extends ReportSimple{
 		out = getReport4();
 		int maxLenKey;
 		int maxLenVal;
+		Integer lp = 1;
 
 		if(recordEntries.size() > 0) {
 			maxLenKey = maxLengthOfMapTreeKey(results);
 			maxLenVal = maxLengthOfMapTreeValue(results);
+
+
 
 			int counter = 0;
 			for (Entry<String, ArrayList<String>>entry : out.entrySet()) {
 				String name = entry.getKey();
 
 				if (counter == 0) {
+					System.out.print("lp. ");
 					System.out.print(ReportFunctions.adjustTextToLength("Name", maxLenKey+3));
 					for(String str:headerList) {
-						System.out.print(ReportFunctions.adjustTextToLength(str, maxLenVal+1));  //wypisuje nazwiska
+						System.out.print(ReportFunctions.adjustTextToLength(str, maxLenVal+1));
 					}
 					counter = counter + 1;
 				}
 				System.out.println();
 				entry.getValue();
-				System.out.print(ReportFunctions.adjustTextToLength(name, maxLenKey+3));   //wypisuje nazwiska
+				System.out.print(lp.toString() + ".  ");
+				lp++;
+				System.out.print(ReportFunctions.adjustTextToLength(name, maxLenKey+3));
 
 				for(String s:entry.getValue()) {
 					System.out.print(ReportFunctions.adjustTextToLength(s, maxLenVal+1));
-
 				}
 
 			}
