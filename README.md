@@ -67,7 +67,11 @@ Program generuje alfabetyczną listę projektów za dany rok kalendarzowy, wraz 
 1/Projekt_X -> ilość godzin
 
 * RAPORT 3
-Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z ilością przepracowanych godzin 
+Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z ilością przepracowanych godzin, oraz projektem któego dotyczy. 
+System umożliwia wybór konkretnego pracownika poprzez wybranie jego imienia i nazwiska.
+
+rok XXXX, Imie i nazwisko
+Lp/Miesiac/Projekt/Liczba godzin 
 
 
 
