@@ -102,7 +102,7 @@ Suma: XXX [h]
 
 
 Program umożliwia także zestawienie wyników procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
-Po naciśnięciu [1\7] i [Enter] zostanie wygenerowany wykres. 
+Po naciśnięciu [7] i [Enter] zostanie wygenerowany wykres. 
 
 
 ## Ograniczenia / known issues
