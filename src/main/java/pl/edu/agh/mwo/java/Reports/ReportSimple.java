@@ -111,14 +111,19 @@ public class ReportSimple {
             CategoryChart chart = new CategoryChartBuilder().width(1200).height(800).title(reportName).xAxisTitle(headerCol1).yAxisTitle(headerCol2).build();
             chart.getStyler().setLegendPosition(Styler.LegendPosition.InsideNW);
             chart.getStyler().setHasAnnotations(true);
+            if(seriesLabel.length > 0 && valuesLabel.length > 0){
+                chart.addSeries(reportName, Arrays.asList(seriesLabel), Arrays.asList(valuesLabel));
+                try{
+                    BitmapEncoder.saveBitmap(chart, folderPath + "\\Report6_chart", BitmapEncoder.BitmapFormat.PNG );
+                    System.out.println("Wykres został wygenerowany poprawnie!");
+                }catch (Exception e){
 
-            chart.addSeries(reportName, Arrays.asList(seriesLabel), Arrays.asList(valuesLabel));
-            try{
-                BitmapEncoder.saveBitmap(chart, folderPath + "\\Report6_chart", BitmapEncoder.BitmapFormat.PNG );
-                System.out.println("Wykres został wygenerowany poprawnie!");
-            }catch (Exception e){
-
+                }
+            }else{
+                System.out.println("Brak danych za ten rok :(");
             }
+
+
         }
     }
 }

@@ -45,6 +45,7 @@ public class Menu {
 			Scanner scan = new Scanner(System.in);
 			System.out.println();
 			System.out.println(ANSI_YELLOW + "*** " +  "Wybierz, który raport chcesz wygenerować: "+ ANSI_YELLOW + "***" + ANSI_RESET);
+			System.out.println(ANSI_BLUE + "0:"+ ANSI_RESET +" Wyświetl wszystkie zaimportowane dane.");
 			System.out.println(ANSI_BLUE + "1:"+ ANSI_RESET +" Alfabetycznej zestawienie listy pracowników <-> liczby godzin");
 			System.out.println(ANSI_BLUE + "2:"+ ANSI_RESET +" Alfabetycznie zestawienie projektów <-> liczba godzin ");
 			System.out.println(ANSI_BLUE + "3:"+ ANSI_RESET +" Szczegółowy wykaz pracy kazdego pracownika");
