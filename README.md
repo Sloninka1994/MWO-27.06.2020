@@ -77,7 +77,14 @@ rok XXXX, Imie i nazwisko
 Lp/Miesiac/Projekt/Liczba godzin 
 
 * RAPORT 4
-Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego projektu.
+Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego roku.
+
+Imię i nazwisko/Projekt_X / Projekt_Y
+
+Imie i nazwisko/ a% / b%
+
+* RAPORT 5
+Pragram generuje szczegółowy wykaz pracy w danym projekcie, który pokazuje liczbe godzin wypracowanych przez poszczególnych pracowników w danym projekcie. 
 
 Lp/Imie i nazwisko/ Liczba godzin
 
@@ -86,7 +93,6 @@ Lp/Imie i nazwisko/ Liczba godzin
 Lp/Imie i nazwisko/ Liczba godzin 
 
 Suma: XXX [h]
-
 
 ## Ograniczenia / known issues
 Brak danych
