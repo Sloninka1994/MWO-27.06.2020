@@ -55,6 +55,8 @@ Po wczytaniu danych program wyświetla menu pozwalające na generowanie wybraneg
 Przykład: Po naciśnięciu [1] i [Enter] zostanie wygenerowany raport pierwszy.
 
 ## Funkcjonalnosci programu
+Program umożliwia tworzenie raportów opisujących aktywności poszczególnych pracowników.
+
 * RAPORT 1
 Program generuje alfabetyczną listę pracowników w danym roku kalendarzowym, wraz z ilością przepracowanych godzin.
 Dane wyświetlane są w postaci czytelnej tabeli:
@@ -67,8 +69,23 @@ Program generuje alfabetyczną listę projektów za dany rok kalendarzowy, wraz 
 1/Projekt_X -> ilość godzin
 
 * RAPORT 3
-Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z ilością przepracowanych godzin 
+Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z ilością przepracowanych godzin, oraz projektem któego dotyczy. 
+System umożliwia wybór konkretnego pracownika poprzez wybranie jego imienia i nazwiska.
 
+rok XXXX, Imie i nazwisko
+
+Lp/Miesiac/Projekt/Liczba godzin 
+
+* RAPORT 4
+Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego projektu.
+
+Lp/Imie i nazwisko/ Liczba godzin
+
+Lp/Imie i nazwisko/ Liczba godzin 
+
+Lp/Imie i nazwisko/ Liczba godzin 
+
+Suma: XXX [h]
 
 
 ## Ograniczenia / known issues
