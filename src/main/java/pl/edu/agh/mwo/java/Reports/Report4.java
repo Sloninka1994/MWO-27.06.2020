@@ -263,6 +263,7 @@ public class Report4 extends ReportSimple{
 				try{
 					BitmapEncoder.saveBitmap(pieChart, folderPath + "\\Report7 - PieChart", BitmapEncoder.BitmapFormat.PNG );
 					System.out.println("Wykres został wygenerowany poprawnie!");
+					System.out.println("Znajdziesz go pod adresem: " + folderPath + "\\Report7 - PieChart.png");
 				}catch (Exception e){
 					System.out.println("Nie wygenerowano raportu");
 				}
@@ -312,6 +313,7 @@ public class Report4 extends ReportSimple{
 				fileOut.close();
 				wb.close();
 				System.out.println("Raport został wygenerowany poprawnie!");
+				System.out.println("Znajdziesz go pod adresem: " + folderPath + "\\"+ reportName + "_" + dtf.format(now) + ".xls");
 			}catch (Exception e){
 
 			}

@@ -123,6 +123,7 @@ public class Report3 {
 				fileOut.close();
 				wb.close();
 				System.out.println("Raport został wygenerowany poprawnie!");
+				System.out.println("Znajdziesz go pod adresem: " + folderPath + "\\"+ reportName + "_" + dtf.format(now) + ".xls");
 			}catch (Exception e){
 
 			}

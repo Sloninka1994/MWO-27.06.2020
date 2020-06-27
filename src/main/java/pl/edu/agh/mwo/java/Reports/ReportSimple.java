@@ -94,6 +94,7 @@ public class ReportSimple {
                 fileOut.close();
                 wb.close();
                 System.out.println("Raport został wygenerowany poprawnie!");
+                System.out.println("Znajdziesz go pod adresem: " + folderPath + "\\"+ reportName + "_" + dtf.format(now) + ".xls");
             }catch (Exception e){
 
             }
@@ -113,9 +114,11 @@ public class ReportSimple {
             chart.getStyler().setHasAnnotations(true);
             if(seriesLabel.length > 0 && valuesLabel.length > 0){
                 chart.addSeries(reportName, Arrays.asList(seriesLabel), Arrays.asList(valuesLabel));
+
                 try{
                     BitmapEncoder.saveBitmap(chart, folderPath + "\\Report6_chart", BitmapEncoder.BitmapFormat.PNG );
                     System.out.println("Wykres został wygenerowany poprawnie!");
+                    System.out.println("Znajdziesz go pod adresem: " + folderPath + "\\Report6_chart");
                 }catch (Exception e){
 
                 }
