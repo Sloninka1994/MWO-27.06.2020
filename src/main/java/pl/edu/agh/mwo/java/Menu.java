@@ -35,6 +35,7 @@ public class Menu {
 			}
 			else {
 				System.out.println(ANSI_RED + "Pusta sciezka !" + ANSI_RESET);
+				return "";
 			}
 		}
 	}
@@ -218,22 +219,33 @@ public class Menu {
 				"                                           ▀▄▄▄▄▄▄▄▄▄▀      ...Twój przyjaciel w generowaniu raportów" + ANSI_RESET);
 		System.out.println(ANSI_GREEN + ANSI_UNDERLINE+ "Manufactured by Iksde team. All rights reserved." + ANSI_RESET);
 		System.out.println("____________________________________________________");
+		while(true) {
+			path = getPath();
+			if(path.toUpperCase().equals("EXIT")){
+				break;
+			}
+			System.out.println(path);
 
-		path = getPath();
-		System.out.println(path);
+			re = ReadData.readAllFromFolder(path);
 
-		re = ReadData.readAllFromFolder(path);
-		if(ReadData.errorsOccured()){
-			System.out.println(ANSI_RED+"Podczas wczytywania danych wystąpiły następujące problemy:"+ANSI_RESET);
-			ReadData.printErrorLog();
+			if(ReadData.errorsOccured()){
+				System.out.println(ANSI_RED+"Podczas wczytywania danych wystąpiły następujące problemy:"+ANSI_RESET);
+				ReadData.printErrorLog();
+			}
+			if(re.size()>0){
+				printMenu();
+			}else{
+				System.out.println(ANSI_RED+"Wczytywanie danych nie powiodło się. Proszę upewnić się że ścieżka do folderu jest poprawna. Aby wyjść wpisz EXIT"+ANSI_RESET);
+			}
 		}
 
-		if (re.size() > 0) {
 
-			printMenu();
-		}else{
-			System.out.println(ANSI_RED+"Wczytywanie danych nie powiodło się. Proszę upewnić się że ścieżka do folderu jest poprawna."+ANSI_RESET);
-		}
+//		if (re.size() > 0) {
+//
+//			printMenu();
+//		}else{
+//			System.out.println(ANSI_RED+"Wczytywanie danych nie powiodło się. Proszę upewnić się że ścieżka do folderu jest poprawna."+ANSI_RESET);
+//		}
 		//Funkcje odpowiednie do raportu -> Wczytywanie Roku, miesiąca, Imienia, etc;
 
 
