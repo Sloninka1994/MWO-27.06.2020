@@ -71,6 +71,7 @@ Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z iloś
 System umożliwia wybór konkretnego pracownika poprzez wybranie jego imienia i nazwiska.
 
 rok XXXX, Imie i nazwisko
+
 Lp/Miesiac/Projekt/Liczba godzin 
 
 * RAPORT 4
