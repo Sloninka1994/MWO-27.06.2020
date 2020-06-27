@@ -46,7 +46,6 @@ public class Report5 extends ReportSimple {
                 sum += value;
                 System.out.printf("%5d %24s %13s %.2f %1s", lp,key,"",value," h ");
                 System.out.println("\n|________|_____________________________|_______________|");
-                
             }
             System.out.printf("%7s %35s %.2f %1s ","Suma: ","", sum, "h"," |");
             System.out.println("\n|______________________________________________________|");

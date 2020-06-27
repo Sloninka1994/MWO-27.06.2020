@@ -57,6 +57,11 @@ public class Menu {
 			String option = scan.nextLine();
 
 			switch (option) {
+				case "0":
+					for(RecordEntry itm : re){
+						System.out.println(itm.toString());
+					}
+					break;
 				case "1":
 					System.out.println(ANSI_GREEN + "Generating Report 1" + ANSI_RESET);
 					System.out.println(ANSI_YELLOW + "*** "  +"Podaj rok dla którego ma powstać raport:"+ ANSI_YELLOW + "***" + ANSI_RESET);
@@ -172,10 +177,20 @@ public class Menu {
 					r6.generateBarChart();
 					break;
 				case "7":
-					for(RecordEntry itm : re){
-						System.out.println(itm.toString());
+					System.out.println(ANSI_GREEN +"Generating Report 7"+ANSI_RESET);
+					System.out.println(ANSI_YELLOW + "*** "  +"Podaj nazwisko pracownika, dla którego powstanie wykres raportu4:"+ ANSI_YELLOW + "***" + ANSI_RESET);
+
+					String workerName = scan.nextLine();
+
+					try {
+
+					} catch (Exception e) {
+						System.out.println(ANSI_RED + "Wprowadzono błędną wartość" + ANSI_RESET);
+						break;
 					}
-					break;
+					Report4 r7 = new Report4(re, workerName);
+					r7.generatePieChart();
+
 				case "8":
 					System.out.println(ANSI_GREEN + "Zapraszamy ponownie! " + ANSI_RESET);
 					return;
@@ -199,7 +214,7 @@ public class Menu {
 				"  /   /\\    /\\   \\     \\     /\\     /    █             █\n" +
 				" /   /  \\  /  \\   \\     \\   /  \\   /     █ █▄▄▄▄▄▄▄▄▄█ █\n" +
 				"/___/    \\/    \\___\\     \\_/    \\_/       █           █    \n" +
-				"                                           ▀▄▄▄▄▄▄▄▄▄▀      ...Twój przyjaciej w generowaniu raportów" + ANSI_RESET);
+				"                                           ▀▄▄▄▄▄▄▄▄▄▀      ...Twój przyjaciel w generowaniu raportów" + ANSI_RESET);
 		System.out.println(ANSI_GREEN + ANSI_UNDERLINE+ "Manufactured by Iksde team. All rights reserved." + ANSI_RESET);
 		System.out.println("____________________________________________________");
 
