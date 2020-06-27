@@ -44,13 +44,15 @@ Program pobiera dane z plików Excel (rozszerzenie XLS) umieszczonych w struktur
 ## Interfejs programu (menu)
 Po wczytaniu danych program wyświetla menu pozwalające na generowanie wybranego raportu.
 
+		0: Pokaż wszystkie zaimportowane dane
 		1: Alfabetyczne zestawienie listy pracowników <-> liczby godzin
 		2: Alfabetyczne zestawienie projektów <-> liczba godzin
 		3: Szczegółowy wykaz pracy kazdego pracownika
 		4: Procentowe zaangazowanie danego pracownika w projektach w danym roku
 		5: Szczegółowy wykaz pracy w danym projekcie
-		6: Pokaż wszystkie zaimportowane dane
+		6: Tworzenie wykresu słupkowego
 		7: Tworzenie wykresu kołowego
+		8. Exit
 
 Przykład: Po naciśnięciu [1] i [Enter] zostanie wygenerowany raport pierwszy.
 
@@ -100,10 +102,23 @@ Lp/Imie i nazwisko/ Liczba godzin
 Suma: XXX [h]
 
 
+* RAPORT 6 
 
-Program umożliwia także zestawienie wyników procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
-Po naciśnięciu [7] i [Enter] zostanie wygenerowany wykres. 
+Program rysuje wykres słupkowy do RAPORTU 2. 
+
+gdzie:
+
+x -> projekty
+
+y -> liczba godzin, która wypracowana w danym projekcie
+
+
+* RAPORT 7
+
+Program zestawia wyniki procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
+
+Po naciśnięciu [7] i [Enter] zostanie wygenerowany wykres kołowy.
 
 
 ## Ograniczenia / known issues
-Brak danych
+Program przyjmuje dane w formacie excel (rozszerzenie XLS).
