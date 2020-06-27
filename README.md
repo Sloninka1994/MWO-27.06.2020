@@ -50,7 +50,7 @@ Po wczytaniu danych program wyświetla menu pozwalające na generowanie wybraneg
 		4: Procentowe zaangazowanie danego pracownika w projektach w danym roku
 		5: Szczegółowy wykaz pracy w danym projekcie
 		6: Pokaż wszystkie zaimportowane dane
-		7: Exit
+		7: Tworzenie wykresu kołowego
 
 Przykład: Po naciśnięciu [1] i [Enter] zostanie wygenerowany raport pierwszy.
 
@@ -58,17 +58,20 @@ Przykład: Po naciśnięciu [1] i [Enter] zostanie wygenerowany raport pierwszy.
 Program umożliwia tworzenie raportów opisujących aktywności poszczególnych pracowników.
 
 * RAPORT 1
+
 Program generuje alfabetyczną listę pracowników w danym roku kalendarzowym, wraz z ilością przepracowanych godzin.
 Dane wyświetlane są w postaci czytelnej tabeli:
 
 Imie i nazwisko -> ilość godzin 
 
 * RAPORT 2 
+
 Program generuje alfabetyczną listę projektów za dany rok kalendarzowy, wraz z ilością godzin, które zostały przepracowane w danym projekcie
 
 1/Projekt_X -> ilość godzin
 
 * RAPORT 3
+
 Program generuje wykaz pracy każdego pracownika w danym projekcie, wraz z ilością przepracowanych godzin, oraz projektem któego dotyczy. 
 System umożliwia wybór konkretnego pracownika poprzez wybranie jego imienia i nazwiska.
 
@@ -77,7 +80,16 @@ rok XXXX, Imie i nazwisko
 Lp/Miesiac/Projekt/Liczba godzin 
 
 * RAPORT 4
-Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego projektu.
+
+Program generuje wykaz procentowego zaangażowania danego pracownika w projektach w danym roku kalendarzowym. System umożliwia wybór żądanego roku.
+
+Imię i nazwisko/Projekt_X / Projekt_Y
+
+Imie i nazwisko/ a% / b%
+
+* RAPORT 5
+
+Pragram generuje szczegółowy wykaz pracy w danym projekcie, który pokazuje liczbe godzin wypracowanych przez poszczególnych pracowników w danym projekcie. 
 
 Lp/Imie i nazwisko/ Liczba godzin
 
@@ -86,6 +98,11 @@ Lp/Imie i nazwisko/ Liczba godzin
 Lp/Imie i nazwisko/ Liczba godzin 
 
 Suma: XXX [h]
+
+
+
+Program umożliwia także zestawienie wyników procentowego zaangażowania danego pracownika w formie wykresu kołowego. 
+Po naciśnięciu [7] i [Enter] zostanie wygenerowany wykres. 
 
 
 ## Ograniczenia / known issues
